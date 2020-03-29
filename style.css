@@ -1,14 +1,8 @@
-.roterhintergrund {
-    background-color: #8F1F1F;
-    padding: 50px;
-    
+.background {
+    background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(20).jpg");
+    height: 100%;
 }
 
-.blauerhintergrund {
-    background-color: blue;
-    padding: 50px;
-    margin: 50px;
-    background-size: 100% 100%;
-
+body {
+    height:100%
 }
-
