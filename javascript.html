@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+
+        .kreis{
+            width: 100px;
+            height: 100px;
+            border-style: solid;
+            border-radius: 50%;
+            display: block;
+            margin: 3rem;
+        }
+
+        #red {
+            background-color: red;
+            border-color: red;
+        }
+
+        #blue {
+            background-color: blue;
+            border-color: blue;
+        }
+
+        #green {
+            background-color: green;
+            border-color: green;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+
+    <p id="text">Hallo Felix</p>
+
+    <button id="knopf">Klick mich</button>
+
+
+    <div class="kreis" id="red"></div>
+    <div class="kreis" id="blue"></div>
+    <div class="kreis" id="green"></div>
+
+
+
+
+    <script type="text/javascript">
+
+        document.getElementById("knopf").onclick = function() {
+
+            document.getElementById("text").innerHTML = "Hallo Welt";
+            document.getElementById("text").style.fontSize = "50px";
+
+        }
+
+        document.getElementById("red").onclick = function() {
+            document.getElementById("red").style.display = "none";
+        }
+
+        document.getElementById("blue").onclick = function() {
+            document.getElementById("blue").style.display = "none";
+        }
+
+        document.getElementById("green").onclick = function() {
+            document.getElementById("green").style.display = "none";
+        }
+
+        // Variable deklarieren
+        var x = 10;
+
+        // Array deklarieren
+        var news = ["Nulltes Element"];
+
+        // Element dem Array hinzufügen
+        news.push("Erstes Element");
+
+        // "=" -> Deklarieren
+        // "==" -> Einfacher Vergleich => Wert verglichen
+        // "===" -> Strikter Vergleich => Datentyp + Wert wird verglichen
+
+        if(x === 20) {
+            console.log(x);
+        } else {
+            console.log("Wert ist doof");
+        }
+
+        for(var i = 0; i < news.length; i++) {
+            console.log(i);
+            console.log(news[i]);
+        }
+
+
+        // In Konsole ausgeben
+        console.log(news);
+
+
+
+
+    </script>
+</body>
+</html>
